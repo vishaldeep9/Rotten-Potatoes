@@ -1,0 +1,26 @@
+<div class="login-container">
+  <img class="film" src="./assets/images/movie-reel1.png" alt="logo" />
+  <div class="logo">Rotten Potatoes</div>
+  <div class="desc">
+    "Rotten Potatoes" could be envisioned as a review platform that features
+    humorous, sarcastic, or brutally honest user reviews of movies, TV shows,
+    games, or any other type of media. Unlike typical platforms that aim for
+    balanced or professional reviews, "Rotten Potatoes" would embrace a playful,
+    down-to-earth, and entertaining approach to critique, focusing on what
+    didn't work in a creative or funny way
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="username">UserName</label>
+      <input type="text" name="username" class="form-control" [(ngModel)]="username"/>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password"  class="form-control" [(ngModel)]="password"/>
+    </div>
+    <div class="btn-container">
+        <div class="error">{{errorMessage}}</div>
+        <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>

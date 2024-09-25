@@ -1,0 +1,104 @@
+.home-container {
+  display: flex;
+  .all-movies {
+    min-height: calc(100vh - 50px);
+    width: 75%;
+    border-right: 1px solid #fdc827;
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      h4{
+        text-transform: uppercase;
+        border-left: 5px solid #ff9900;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+      .view-all{
+        cursor: pointer;
+        color: #ff9900;
+      }
+    }
+    .movies-thumbnail{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .movie{
+        .cover{
+          img{
+            border-radius: 5px;
+            cursor: pointer;
+          }
+        }
+        .details{
+          width: 150px;
+          .name{
+           font-weight: bold;
+           height: 50px;
+           margin-top: 5px;
+           cursor: pointer;
+          }
+          .rating{
+            padding-right: 45px;
+            position: relative;
+            width: 85%;
+           .rating-value{
+            position: absolute;
+            top: 10px;
+            right: 0;
+            font-weight: bold;
+            font-size: 15px;
+           }
+          }
+
+        }
+      }
+    }
+  }
+  .popular-movies {
+    min-height: calc(100vh - 50px);
+    width: 25%;
+    padding: 20px 40px;
+    font-family: "Roboto", sans-serif;
+    h4{
+      text-transform: uppercase;
+      border-left: 5px solid #ff9900;
+      font-weight: bold;
+      padding-left: 10px;
+    }
+    .rating{
+      padding-right: 45px;
+      position: relative;
+      width: 85%;
+     .rating-value{
+      position: absolute;
+      top: 10px;
+      right: 0;
+      font-weight: bold;
+      font-size: 15px;
+     }
+    }
+    .movies{
+      .movie{
+        margin-bottom: 15px;
+        margin-top: 15px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        .name{
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      .view-all{
+        cursor: pointer;
+        text-align: right;
+        color: #ff9900;
+        margin-right: 40px;
+      }
+    }
+  }
+}
